@@ -7,12 +7,12 @@ public class Task3 { //Create array for 20 numbers and display it as 2 arrays wi
 
         int array[] = new int[20];
         System.out.println("Type 20 numbers separated by spaces and press Enter");
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = input.nextInt();
         }
         System.out.println("\n==========");
         System.out.println("Even numbers:");
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
                 System.out.println(array[i]);
             }
@@ -20,7 +20,7 @@ public class Task3 { //Create array for 20 numbers and display it as 2 arrays wi
         }
         System.out.println("\n==========");
         System.out.println("Odd numbers:");
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
                 System.out.println(array[i]);
             }
